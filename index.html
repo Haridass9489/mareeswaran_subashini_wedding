@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1b0816">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Marcellus&family=Noto+Serif+Tamil:wght@500;700&family=Pinyon+Script&family=Cinzel:wght@500;600;700&family=Cinzel+Decorative:wght@700&family=Arima:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Marcellus&family=Noto+Serif+Tamil:wght@500;700&family=Pinyon+Script&family=Cinzel:wght@500;600;700&family=Cinzel+Decorative:wght@700&family=Arima:wght@500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@1,700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ivory:#1b0816; --ivory2:#2b0f24;
@@ -435,6 +435,20 @@ img,svg,iframe{max-width:100%}
   .hero .couple.pic{width:104vw}
 }
 
+
+/* ---------- Slanted (italic) typography everywhere ---------- */
+body,p,div,span,a,button,small,b,em{font-style:italic}
+body{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}
+.mc,.role,.lbl,.chip,.ev a.cal,.btn,.cd small,.dateband .side,.toast,.parents .lbl,.contacts .lbl{
+  font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:700;letter-spacing:.14em}
+.name,.name .i{font-family:"Great Vibes",cursive;font-style:normal;font-weight:400;font-size:clamp(40px,12.5vw,72px);line-height:1.15}
+.amp span{font-family:"Great Vibes",cursive;font-style:normal}
+.st h2{font-family:"Playfair Display",serif;font-style:italic;font-weight:700;font-size:24px;letter-spacing:.06em;text-transform:none}
+.ev h3,.venue .vn-en,.closing p{font-family:"Great Vibes",cursive;font-style:normal}
+.dateband .d,.cd b,.contacts b{font-family:"Playfair Display",serif;font-style:italic;font-weight:700}
+.ev .when,.ev .time,.parents p,.venue .addr,.qual{font-family:"Playfair Display",serif;font-style:italic;font-weight:500}
+.ta{font-style:italic}
+
 @media (min-width:700px){body{font-size:19px}}
 @media (prefers-reduced-motion:reduce){
   .draw{animation:none;stroke-dashoffset:0}.dot,#intro .center{animation:none;opacity:1}
@@ -505,7 +519,6 @@ img,svg,iframe{max-width:100%}
     <div class="reveal headrow">
       <svg class="peacock l" viewBox="0 0 120 150" aria-hidden="true"></svg>
       <div>
-        <div class="inv-ta ta">திருமண அழைப்பிதழ்</div>
         <div class="inv-en mc">Wedding Invitation</div>
       </div>
       <svg class="peacock r" viewBox="0 0 120 150" aria-hidden="true"></svg>
@@ -555,7 +568,6 @@ img,svg,iframe{max-width:100%}
   <!-- Events -->
   <section>
     <div class="st reveal">
-      <span class="ta">நிகழ்ச்சிகள்</span>
       <h2>Celebrations</h2>
       <svg viewBox="0 0 120 14" aria-hidden="true"><path d="M2 7h44M74 7h44" stroke="#d4a017" stroke-width="1.5"/><circle cx="60" cy="7" r="5" fill="none" stroke="#4fe0a6" stroke-width="1.5"/><circle cx="60" cy="7" r="2" fill="#ff8ac4"/><circle cx="50" cy="7" r="1.6" fill="#ff8ac4"/><circle cx="70" cy="7" r="1.6" fill="#ff8ac4"/></svg>
     </div>
@@ -578,7 +590,6 @@ img,svg,iframe{max-width:100%}
             </g>
           </svg>
         </div>
-        <div class="k ta">நிச்சயதார்த்தம்</div>
         <h3>Engagement</h3>
         <div class="when">Thursday, 19 November 2026</div>
         <div class="time">6:00 PM – 7:25 PM</div>
@@ -609,12 +620,11 @@ img,svg,iframe{max-width:100%}
             </g>
           </svg>
         </div>
-        <div class="k ta">முகூர்த்தம்</div>
         <h3>Wedding</h3>
         <div class="when">Friday, 20 November 2026</div>
         <div class="time">6:00 AM – 7:25 AM</div>
         <span class="chip" data-s="2026-11-20T06:00:00+05:30" data-e="2026-11-20T07:25:00+05:30"></span>
-        <span class="tamil-date ta">கார்த்திகை 4</span><br>
+        <span class="tamil-date">Karthigai 4</span><br>
         <a class="cal" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%20%C2%B7%20Mareeswaran%20%26%20Subashini&dates=20261120T003000Z/20261120T015500Z&location=2FJJ%2B8XF%20TCA%20Mahal%2C%20Bala%20Nagar%2C%20Theni%2C%20Tamil%20Nadu%20625531">+ Add to calendar</a>
       </div>
     </div>
@@ -636,12 +646,10 @@ img,svg,iframe{max-width:100%}
       <g class="kal" fill="#2fbf86"><path d="M69 21l6-14 6 14z"/><circle cx="75" cy="5" r="3" fill="#d4a017"/></g>
     </svg>
     <div class="st reveal">
-      <span class="ta">இடம்</span>
       <h2>Venue</h2>
       <svg viewBox="0 0 120 14" aria-hidden="true"><path d="M2 7h44M74 7h44" stroke="#d4a017" stroke-width="1.5"/><circle cx="60" cy="7" r="5" fill="none" stroke="#4fe0a6" stroke-width="1.5"/><circle cx="60" cy="7" r="2" fill="#ff8ac4"/><circle cx="50" cy="7" r="1.6" fill="#ff8ac4"/><circle cx="70" cy="7" r="1.6" fill="#ff8ac4"/></svg>
     </div>
     <div class="reveal">
-      <div class="vn ta">TCA திருமண மஹால்</div>
       <div class="vn-en">TCA Marriage Hall</div>
       <div class="addr">Bommaiyagoundanpatti, Theni</div>
       <div class="both">Venue for both functions</div>
@@ -656,7 +664,6 @@ img,svg,iframe{max-width:100%}
   <!-- Contact -->
   <section>
     <div class="st reveal">
-      <span class="ta">தொடர்புக்கு</span>
       <h2>Contact</h2>
       <svg viewBox="0 0 120 14" aria-hidden="true"><path d="M2 7h44M74 7h44" stroke="#d4a017" stroke-width="1.5"/><circle cx="60" cy="7" r="5" fill="none" stroke="#4fe0a6" stroke-width="1.5"/><circle cx="60" cy="7" r="2" fill="#ff8ac4"/><circle cx="50" cy="7" r="1.6" fill="#ff8ac4"/><circle cx="70" cy="7" r="1.6" fill="#ff8ac4"/></svg>
     </div>
@@ -766,7 +773,6 @@ img,svg,iframe{max-width:100%}
     setTimeout(function(){intro.remove()},1500);
     startReveal();
     if(!reduce){burst();setTimeout(startPetals,900);}
-    if(!reduce)setTimeout(function(){toast("Tap anywhere to shower blessings 🌸")},4200);
   }
   var env=document.getElementById("env"),unlocking=false;
   function unlock(){
