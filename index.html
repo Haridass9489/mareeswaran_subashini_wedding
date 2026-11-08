@@ -401,6 +401,40 @@ body{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;letter-spaci
 .parents p{font-size:20px;font-weight:700}
 .closing p{font-family:"Pinyon Script",cursive;font-style:normal;font-size:30px;line-height:1.3;color:#ffe08a;text-shadow:0 0 12px rgba(255,200,90,.45),0 2px 3px #000}
 
+
+/* ---------- Phone fit: nothing wider than the screen, no sideways sliding ---------- */
+html,body{overflow-x:hidden;max-width:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overscroll-behavior-x:none;touch-action:pan-y pinch-zoom}
+main{overflow-x:hidden;overflow-x:clip}
+.hero{overflow:hidden;overflow:clip}
+img,svg,iframe{max-width:100%}
+.name{font-size:clamp(36px,11.5vw,70px)}
+.cd{gap:8px;padding:0 4px}
+.cd div{flex:1;width:auto;max-width:72px;min-width:0}
+.ev .when,.ev .time,.venue .addr,.parents p{overflow-wrap:anywhere}
+@media (max-width:440px){
+  section{padding:30px 16px}
+  .headrow{gap:2px}
+  .peacock{width:54px;height:70px}
+  .inv-ta{font-size:20px}
+  .inv-en{font-size:10.5px;letter-spacing:.16em}
+  .parents{grid-template-columns:1fr;gap:22px}
+  .contacts{grid-template-columns:1fr;gap:12px}
+  .dateband{gap:10px}
+  .dateband .side{min-width:78px;font-size:12px;letter-spacing:.14em}
+  .dateband .d{font-size:52px}
+  .cd b{font-size:22px}
+  .st h2{font-size:20px}
+  .st::before,.st::after{width:34px;height:34px}
+  .st::before{left:2%}.st::after{right:2%}
+  .tl{padding-left:40px}
+  .ev .node{left:-40px}
+  .map{height:200px}
+  .hero .mandala{width:110vw;margin-left:-55vw}
+  .hero .couple.pic{width:104vw}
+}
+
 @media (min-width:700px){body{font-size:19px}}
 @media (prefers-reduced-motion:reduce){
   .draw{animation:none;stroke-dashoffset:0}.dot,#intro .center{animation:none;opacity:1}
